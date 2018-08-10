@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
+  I am @hurickkrugner on Twitter or @hk95 on GitHub. Feel free to message me anytime.
+-->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section class="user">
+        <div class="user_options-container">
+            <div class="user_options-text">
+                <div class="user_options-unregistered">
+                    <h2 class="user_unregistered-title">Don't have an account?</h2>
+                    <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+                    <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+                </div>
+
+                <div class="user_options-registered">
+                    <h2 class="user_registered-title">Have an account?</h2>
+                    <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+                    <button class="user_registered-login" id="login-button">Login</button>
+                </div>
+            </div>
+
+            <div class="user_options-forms" id="user_options-forms">
+                <div class="user_forms-login">
+                    <h2 id="login_title" class="forms_title">Login</h2>
+                    <form class="forms_form">
+                        <fieldset class="forms_fieldset">
+                            <div class="forms_field">
+                                <input id='login__username' type="text" placeholder="Username" class="forms_field-input" required autofocus />
+                            </div>
+                            <div class="forms_field">
+                                <input id='login__password' type="password" placeholder="Password" class="forms_field-input" required />
+                            </div>
+                        </fieldset>
+                        <div class="forms_buttons">
+                            <button type="button" id="forgot" class="forms_buttons-forgot">Forgot password?</button>
+                            <input type="submit" id='login' value="Log In" class="forms_buttons-action">
+                        </div>
+                    </form>
+                </div>
+                <div class="user_forms-signup">
+                    <h2 id="signup_title" class="forms_title">Sign Up</h2>
+                    <form class="forms_form">
+                        <fieldset class="forms_fieldset">
+                            <div class="forms_field">
+                                <input id='signup__username' type="text" placeholder="Username" class="forms_field-input" required />
+                            </div>
+                            <div class="forms_field">
+                                <input id='signup__password' type="Password" placeholder="Password" class="forms_field-input" required />
+                            </div>
+                            <div class="forms_field">
+                                <input id='signup__confirm_password' type="password" placeholder="Confirm Password" class="forms_field-input" required />
+                            </div>
+                        </fieldset>
+                        <div class="forms_buttons">
+                            <input id='signup' type="submit" value="Sign up" class="forms_buttons-action">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/axios.js"></script>
+<script src="/jquery.js"></script>
+<script src="./index.js"></script>
+<script src="./bg.js"></script>
+<script src="./main.js"></script>
+</html>
